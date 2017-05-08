@@ -1,0 +1,25 @@
+
+  <div class="input-group col-md-6 col-md-offset-1">
+    <input type="text" class="form-control" placeholder="Add Task">
+    <div class="input-group-btn">
+      <button class="btn btn-success" type="button">Create</button>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="task-list col-md-offset-1">
+    <div *ngFor="let task of tasks">
+      <div class="col-md-1">
+        <input type="checkbox">
+      </div>
+      <div class="col-md-4">
+        {{task.title}}
+      </div>
+      <div class="col-md-2">
+        <input type="button" value="Delete" class="btn btn-danger pull-right">
+      </div>
+      <br>
+      <br>
+    </div>
+  </div>
